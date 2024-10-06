@@ -348,6 +348,7 @@ Depends: libegl-dev,
          qt5-qmake (= ${binary:Version}),
          qtbase5-dev-tools (= ${binary:Version}),
          qtchooser,
+         qt5-default,
          ${misc:Depends}
 Recommends: libqt5opengl5-dev (= ${binary:Version})
 Suggests: default-libmysqlclient-dev,
