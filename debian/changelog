@@ -1,6 +1,7 @@
-qtbase-opensource-src (5.15.8-1+deepin9) unstable; urgency=medium
+qtbase-opensource-src (5.15.8+gxde-1) unstable; urgency=medium
 
   * fix auto selection for gles
+  * We change version num to change upstream to deepin
 
  -- Chang Yang <yangchang@deepin.org>  Fri, 31 May 2024 09:59:30 +0800
 
