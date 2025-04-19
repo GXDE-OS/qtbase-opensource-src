@@ -19,7 +19,8 @@ sslpkgname := $(shell dpkg-query --show '--showformat=$${Depends}' libssl-dev | 
 # Upstream changelog
 upstream_changes := dist/changes-$(shell echo $(DEB_VERSION_UPSTREAM) | sed -e 's/+dfsg//' | sed -e 's/+git.*//')
 
-upstream_version := $(shell echo $(DEB_VERSION_UPSTREAM) | sed -r "s/.*([0-9]+\.[0-9]+\.[0-9]+)(\.[0-9]+).*/\1/g")
+#upstream_version := $(shell echo $(DEB_VERSION_UPSTREAM) | sed -r "s/.*([0-9]+\.[0-9]+\.[0-9]+)(\.[0-9]+).*/\1/g")
+upstream_version := $(shell echo $(DEB_VERSION_UPSTREAM) | sed -r "s/.*([0-9]+\.[0-9]+\.[0-9]+).*/\1/g")
 
 ifneq (,$(filter libqt5sql5-ibase,$(shell dh_listpackages)))
 	extra_configure_opts += -plugin-sql-ibase
